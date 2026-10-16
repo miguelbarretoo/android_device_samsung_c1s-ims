@@ -71,6 +71,9 @@ PRODUCT_COPY_FILES += \
 
 $(call soong_config_set_bool,wpa_supplicant_8,board_wlan_bcmdhd_sae,true)
 
+# IMS
+$(call inherit-product, hardware/lineage/generic-ims/ims.mk)
+
 # Inherit from Canvas
 $(call inherit-product, device/samsung/universal9830-common/device-canvas.mk)
 
